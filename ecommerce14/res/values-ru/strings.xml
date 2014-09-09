@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  	<string name="action_settings">Настройки</string>
+    <string name="btn_store_front_text">Store-front</string>
+    <string name="btn_back_end_text">Back-end</string>
+    <string name="btn_buy">Купить</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="textview_product_price">Цена:</string>
+    <string name="textview_product_count">Количество:</string>
+    <string name="pieces">шт.</string>
+    <string name="img_desc">описание иконки (стрелка вправо)</string>
+    <string name="empty">Пусто</string>
+</resources>

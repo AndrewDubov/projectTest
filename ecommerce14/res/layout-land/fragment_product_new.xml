@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A62788"
+    android:id="@+id/product_new_layout_root">    
+     
+   	<LinearLayout
+   	    android:id="@+id/product_new_linear_layout_top"
+		android:paddingTop="8dp"
+		android:paddingBottom="8dp"
+		android:paddingRight="8dp"
+		android:paddingLeft="8dp"
+       	android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:background="#A9A9A9" >	   
+	     	
+        <Button 
+        	android:id="@+id/product_new_btn_save"
+            android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/btn_save"
+	    	android:layout_weight="1"/>
+        
+        <Button 
+            android:id="@+id/product_new_btn_cancel"
+            android:layout_width="0dp"
+	    	android:layout_height="wrap_content"
+	    	android:text="@string/btn_cancel"
+	    	android:layout_weight="1"/>	  
+	    	  	
+	</LinearLayout>
+	
+    <EditText
+    	android:id="@+id/product_new_edit_text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@null"
+        android:inputType="text"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"           
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" 
+        android:layout_below="@+id/product_new_linear_layout_top">        
+        <!--  requestFocus /> -->
+    </EditText> 
+       	
+	<View
+	    android:id="@+id/product_new_view01"
+    	style="@style/viewBorder"
+    	android:layout_below="@+id/product_new_edit_text_product_name" />
+	
+	<LinearLayout
+	    android:id="@+id/product_new_linear_layout_price"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp"
+	    android:paddingTop="8dp"
+	    android:paddingBottom="8dp"
+    	android:layout_width="match_parent"
+	   	android:layout_height="wrap_content"
+	   	android:orientation="horizontal"
+	   	android:layout_below="@+id/product_new_view01">
+        
+	   	<TextView
+	   	    android:id="@+id/product_new_text_view_price"
+	   	    android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:layout_marginRight="16dp"
+	  		android:textSize="21sp"
+	   		android:text="@string/textview_product_price">	    	    
+	   	</TextView>
+	   	
+	   	<EditText
+	   	    android:id="@+id/product_new_edit_text_product_price"
+	   	    android:layout_width="match_parent"
+	   	    android:layout_height="wrap_content"
+	   	    android:ems="10"
+	   	    android:hint="@null"
+	   	    android:inputType="numberDecimal" >
+   		</EditText>		
+   			
+	</LinearLayout>
+	
+	<View
+	    android:id="@+id/product_new_view02"
+   		style="@style/viewBorder" 
+   		android:layout_below="@+id/product_new_linear_layout_price"/>
+		
+	<LinearLayout
+	    android:id="@+id/product_new_linear_layout_count"
+		android:paddingLeft="16dp"
+	    android:paddingTop="8dp"
+	    android:paddingBottom="8dp"
+    	android:layout_width="match_parent"
+	   	android:layout_height="wrap_content"
+	   	android:orientation="horizontal"
+	   	android:layout_below="@+id/product_new_view02">	    	
+	   	
+	    <TextView
+	        android:id="@+id/product_new_text_view_count"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+	   		android:orientation="vertical"
+	   		android:layout_marginRight="16dp"
+	   		android:text="@string/textview_product_count"
+	   		android:textSize="21sp">	    	    
+	   	</TextView>
+	   	
+    	<EditText
+    	    android:id="@+id/product_new_edit_text_product_count"
+    	    android:layout_width="match_parent"
+    	    android:layout_height="wrap_content"
+    	    android:layout_marginRight="16dp"
+    	    android:ems="10"
+    	    android:hint="@null"
+    	    android:inputType="number" >
+   		</EditText>
+   						
+    </LinearLayout>
+    
+    <View
+        android:id="@+id/product_new_view03"
+   		style="@style/viewBorder"
+   		android:layout_below="@+id/product_new_linear_layout_count" />
+
+</RelativeLayout>

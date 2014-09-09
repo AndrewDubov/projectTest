@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ecommerce14</string>
+    <string name="action_settings">Settings</string>    
+    <string name="btn_store_front_text">Store-front</string>
+    <string name="btn_back_end_text">Back-end</string>
+    <string name="btn_buy">Buy</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="textview_product_price">Price:</string>
+    <string name="textview_product_count">Count:</string>
+    <string name="pieces">pcs</string>
+    <string name="img_desc">imgDesc</string>
+    <string name="btn_new_product">+</string>
+    <string name="empty">Empty</string>
+
+</resources>
